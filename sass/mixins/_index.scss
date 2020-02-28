@@ -1,0 +1,26 @@
+@mixin line-rhythm($mb, $lh: 1.5) {
+  margin-bottom: $mb;
+  line-height: $lh;
+}
+
+@mixin text-style($family, $size, $color) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+
+  @if $size == $h1 {
+    @include line-rhythm(0, 4.5rem);
+  } @else if $size > 4.5rem {
+    @include line-rhythm(3rem, 6rem);
+  } @else if $size > 3rem {
+    @include line-rhythm(1.5rem, 4.5rem);
+  } @else if $size > 1.5rem {
+    @include line-rhythm(0, 3rem);
+  } @else {
+    @include line-rhythm(0);
+  }
+}
+
+@mixin fade($prop, $color, $opacity: 0.5) {
+  #{$prop}: rgba($color, $opacity);
+}

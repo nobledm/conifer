@@ -1,0 +1,12 @@
+header {
+  position: relative;
+  margin-bottom: 4.5rem;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &.inner-wrapper {
+    padding-bottom: 1.5rem;
+  }
+}

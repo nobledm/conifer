@@ -1,0 +1,41 @@
+$m-plus: "M Plus Rounded 1c", "Verdana", sans-serif;
+$give-glory: "Give You Glory", "Comic Sans MS", serif; // Yeah that's right
+
+/* m-plus-rounded-1c-regular - latin */
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  font-style: normal;
+  font-weight: 400;
+  src: local("M PLUS Rounded 1c"), local("MPLUSRounded1c-Regular"),
+    url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* m-plus-rounded-1c-700 - latin */
+@font-face {
+  font-family: "M PLUS Rounded 1c";
+  font-style: normal;
+  font-weight: 700;
+  src: local("M PLUS Rounded 1c Bold"), local("MPLUSRounded1c-Bold"),
+    url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-700.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* give-you-glory-regular - latin */
+@font-face {
+  font-family: "Give You Glory";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Give You Glory"), local("GiveYouGlory"),
+    url("../assets/fonts/give-you-glory/give-you-glory-v9-latin-regular.woff2")
+      format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../assets/fonts/give-you-glory/give-you-glory-v9-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

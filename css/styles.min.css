@@ -1,0 +1,75 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+
+ul { list-style: none; }
+
+button, input, select, textarea { margin: 0; }
+
+html { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+*, *::before, *::after { -webkit-box-sizing: inherit; box-sizing: inherit; }
+
+img, video { height: auto; max-width: 100%; }
+
+iframe { border: 0; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+td:not([align]), th:not([align]) { text-align: left; }
+
+/* m-plus-rounded-1c-regular - latin */
+@font-face { font-family: "M PLUS Rounded 1c"; font-style: normal; font-weight: 400; src: local("M PLUS Rounded 1c"), local("MPLUSRounded1c-Regular"), url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-regular.woff2") format("woff2"), url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* m-plus-rounded-1c-700 - latin */
+@font-face { font-family: "M PLUS Rounded 1c"; font-style: normal; font-weight: 700; src: local("M PLUS Rounded 1c Bold"), local("MPLUSRounded1c-Bold"), url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-700.woff2") format("woff2"), url("../assets/fonts/mplus-rounded/m-plus-rounded-1c-v10-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* give-you-glory-regular - latin */
+@font-face { font-family: "Give You Glory"; font-style: normal; font-weight: 400; src: local("Give You Glory"), local("GiveYouGlory"), url("../assets/fonts/give-you-glory/give-you-glory-v9-latin-regular.woff2") format("woff2"), url("../assets/fonts/give-you-glory/give-you-glory-v9-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */ }
+
+/* Base 16 - Perfect 4th ----- MED -----*/
+h1 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 3.157rem; color: #ca4016; margin-bottom: 0; line-height: 4.5rem; }
+
+h2 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 4.209rem; color: #587469; margin-bottom: 1.5rem; line-height: 4.5rem; }
+
+h3 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 2.369rem; color: #3a8eaa; margin-bottom: 0; line-height: 3rem; }
+
+h4 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 1.777rem; color: #3a8eaa; margin-bottom: 0; line-height: 3rem; }
+
+body { font-family: "M Plus Rounded 1c", "Verdana", sans-serif; color: #28203d; }
+
+a { text-decoration: none; }
+
+html { background-color: #dcdcdb; }
+
+body { background: url("../../assets/svg/Waiau.svg") no-repeat top left/contain fixed, linear-gradient(51deg, #dcdcdb 45.5%, #eae8e4 45.5%) fixed; min-height: 100vh; }
+
+body > .wrapper { max-width: 75rem; border-width: 0.8rem; border-style: none solid; background-color: rgba(252, 248, 250, 0.6); border-color: rgba(229, 171, 23, 0.3); }
+
+.wrapper { margin: 0 auto; padding: 0 1rem; width: 90%; min-height: 100vh; }
+
+p { max-width: 35.5rem; margin-bottom: 1.5rem; }
+
+header { position: relative; margin-bottom: 4.5rem; }
+
+header h2 { margin-bottom: 0; }
+
+header.inner-wrapper { padding-bottom: 1.5rem; }
+
+.inner-wrapper { width: 100%; padding: 1.5rem 1rem; padding-top: 3rem; padding-bottom: 3rem; background: #fcf8fa; }
+
+.section-divider { position: absolute; width: 100%; height: 3rem; bottom: -3rem; right: 0; fill: #fcf8fa; }
+
+.inner-divider { position: relative; margin: 1.5rem auto; width: 100%; }
+
+.inner-divider .mask { overflow: hidden; height: 0.55rem; }
+
+.inner-divider .mask:after { content: ""; display: block; margin: -1.5rem auto 0; height: 1.5rem; border-radius: 48%; -webkit-box-shadow: 0 0 0.45rem #849c9b; box-shadow: 0 0 0.45rem #849c9b; }
+
+.inner-divider span { position: absolute; bottom: 100%; left: 50%; margin-bottom: -1.5625rem; margin-left: -1.5625rem; padding: 0.3rem; width: 3.125rem; height: 3.125rem; border-radius: 50%; -webkit-box-shadow: 0.125rem 0.35rem 0.45rem #bfcbba; box-shadow: 0.125rem 0.35rem 0.45rem #bfcbba; background: #fcf8fa; }
+
+.inner-divider svg { height: 2.5rem; width: 2.5rem; border-radius: 50%; border: 1px dashed #bfcbba; fill: #849c9b; padding: 0.5rem; }
+/*# sourceMappingURL=styles.min.css.map */

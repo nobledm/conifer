@@ -1,0 +1,59 @@
+.inner-wrapper {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background: $white;
+}
+
+.section-divider {
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  bottom: -3rem;
+  right: 0;
+  fill: $white;
+}
+
+.inner-divider {
+  position: relative;
+  margin: 1.5rem auto;
+  width: 100%;
+
+  .mask {
+    overflow: hidden;
+    height: 0.55rem;
+
+    &:after {
+      content: "";
+      display: block;
+      margin: -1.5rem auto 0;
+      height: 1.5rem;
+      border-radius: 48%;
+      box-shadow: 0 0 0.45rem $md-green;
+    }
+  }
+
+  span {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-bottom: -1.5625rem;
+    margin-left: -1.5625rem;
+    padding: 0.3rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    box-shadow: 0.125rem 0.35rem 0.45rem $lt-green;
+    background: $white;
+  }
+
+  svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    border: 1px dashed $lt-green;
+    fill: $md-green;
+    padding: 0.5rem;
+  }
+}

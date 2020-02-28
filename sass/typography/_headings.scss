@@ -1,0 +1,15 @@
+h1 {
+  @include text-style($give-glory, $h1, $red);
+}
+
+h2 {
+  @include text-style($give-glory, $h2, $dk-green);
+}
+
+h3 {
+  @include text-style($give-glory, $h3, $md-blue);
+}
+
+h4 {
+  @include text-style($give-glory, $h4, $md-blue);
+}
