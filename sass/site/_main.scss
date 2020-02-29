@@ -1,0 +1,95 @@
+main {
+  padding-bottom: 3rem;
+
+  .inner-wrapper {
+    background: $white;
+    border: 0.35rem;
+    border-style: solid none none solid;
+
+    @include fade(border-top-color, $navy, 0.8);
+    @include fade(border-left-color, $lt-blue);
+  }
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+
+  &.inner-wrapper {
+    padding-bottom: 0;
+  }
+
+  .register {
+    width: 18rem;
+
+    a {
+      font-size: $h5;
+    }
+  }
+}
+
+/*-----
+   TABS
+  -----*/
+.ui-tabs {
+  position: relative;
+}
+
+.ui-tabs-nav {
+  display: flex;
+  list-style: none;
+
+  li {
+    padding: 0.5rem 1rem;
+    border-style: solid dotted none none;
+    border-width: 0.1875rem 1px;
+    border-color: $md-green $lt-green;
+    background: $white;
+
+    &:first-of-type {
+      border-left-style: dotted;
+    }
+
+    &.ui-tabs-active {
+      position: relative;
+      border-bottom: none;
+      background: $white;
+      z-index: 20;
+
+      a,
+      a:hover {
+        color: $md-blue;
+      }
+
+      a:hover {
+        cursor: text;
+      }
+    }
+  }
+}
+
+.ui-tabs .ui-tabs-panel {
+  position: relative;
+  box-shadow: 0.25rem -0.25rem 0.35rem $lt-green;
+  border-left: 1px $lt-green;
+  padding: 1.5rem 1rem;
+  background: $white;
+  z-index: 10;
+
+  li:last-child,
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.conifer-facts {
+  margin-left: 1.25rem;
+  margin-top: 1.5rem;
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+}

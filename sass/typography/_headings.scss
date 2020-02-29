@@ -7,9 +7,15 @@ h2 {
 }
 
 h3 {
+  flex: 100% 1 0;
+
   @include text-style($give-glory, $h3, $md-blue);
 }
 
 h4 {
-  @include text-style($give-glory, $h4, $md-blue);
+  @include text-style($m-plus, $h4, $md-blue);
+}
+
+h5 {
+  @include text-style($m-plus, $h5, $navy);
 }

@@ -1,9 +1,9 @@
 .inner-wrapper {
+  position: relative;
   width: 100%;
   padding: 1.5rem 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background: $white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .section-divider {
@@ -17,8 +17,10 @@
 
 .inner-divider {
   position: relative;
-  margin: 1.5rem auto;
+  height: 0;
+  margin: 0 auto;
   width: 100%;
+  z-index: 1010;
 
   .mask {
     overflow: hidden;
@@ -56,4 +58,18 @@
     fill: $md-green;
     padding: 0.5rem;
   }
+}
+
+.block {
+  display: block;
+}
+
+.ui-tooltip {
+  position: absolute;
+  background: $dk-green;
+  color: $white;
+  padding: 8px;
+  max-width: 17.5rem;
+  box-shadow: 0 0 5px $md-green;
+  z-index: 9999;
 }

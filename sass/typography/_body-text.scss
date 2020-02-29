@@ -4,5 +4,14 @@ body {
 }
 
 a {
+  color: $red;
   text-decoration: none;
+
+  &:hover {
+    color: $md-green;
+  }
+}
+
+.note {
+  font-size: $note;
 }

@@ -35,13 +35,19 @@ h1 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 3.157rem;
 
 h2 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 4.209rem; color: #587469; margin-bottom: 1.5rem; line-height: 4.5rem; }
 
-h3 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 2.369rem; color: #287c95; margin-bottom: 0; line-height: 3rem; }
+h3 { -webkit-box-flex: 100%; -ms-flex: 100% 1 0px; flex: 100% 1 0; font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 2.369rem; color: #287c95; margin-bottom: 0; line-height: 3rem; }
 
-h4 { font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 1.777rem; color: #287c95; margin-bottom: 0; line-height: 3rem; }
+h4 { font-family: "M Plus Rounded 1c", "Verdana", sans-serif; font-size: 1.777rem; color: #287c95; margin-bottom: 0; line-height: 3rem; }
+
+h5 { font-family: "M Plus Rounded 1c", "Verdana", sans-serif; font-size: 1.333rem; color: #2a3e4c; margin-bottom: 0; line-height: 1.5; }
 
 body { font-family: "M Plus Rounded 1c", "Verdana", sans-serif; color: #28203d; }
 
-a { text-decoration: none; }
+a { color: #ca4016; text-decoration: none; }
+
+a:hover { color: #849c9b; }
+
+.note { font-size: 0.75rem; }
 
 html { background-color: #dcdcdb; }
 
@@ -57,13 +63,48 @@ header { position: relative; margin-bottom: 4.5rem; }
 
 header h2 { margin-bottom: 0; }
 
-header.inner-wrapper { padding-bottom: 1.5rem; }
+header.inner-wrapper { padding-top: 3rem; background: #fcf8fa; }
 
-.inner-wrapper { width: 100%; padding: 1.5rem 1rem; padding-top: 3rem; padding-bottom: 3rem; background: #fcf8fa; }
+main { padding-bottom: 3rem; }
+
+main .inner-wrapper { background: #fcf8fa; border: 0.35rem; border-style: solid none none solid; border-top-color: rgba(42, 62, 76, 0.8); border-left-color: rgba(96, 190, 191, 0.5); }
+
+.intro { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-bottom: 3rem; }
+
+.intro.inner-wrapper { padding-bottom: 0; }
+
+.intro .register { width: 18rem; }
+
+.intro .register a { font-size: 1.333rem; }
+
+/*----- TABS -----*/
+.ui-tabs { position: relative; }
+
+.ui-tabs-nav { display: -webkit-box; display: -ms-flexbox; display: flex; list-style: none; }
+
+.ui-tabs-nav li { padding: 0.5rem 1rem; border-style: solid dotted none none; border-width: 0.1875rem 1px; border-color: #849c9b #bfcbba; background: #fcf8fa; }
+
+.ui-tabs-nav li:first-of-type { border-left-style: dotted; }
+
+.ui-tabs-nav li.ui-tabs-active { position: relative; border-bottom: none; background: #fcf8fa; z-index: 20; }
+
+.ui-tabs-nav li.ui-tabs-active a, .ui-tabs-nav li.ui-tabs-active a:hover { color: #287c95; }
+
+.ui-tabs-nav li.ui-tabs-active a:hover { cursor: text; }
+
+.ui-tabs .ui-tabs-panel { position: relative; -webkit-box-shadow: 0.25rem -0.25rem 0.35rem #bfcbba; box-shadow: 0.25rem -0.25rem 0.35rem #bfcbba; border-left: 1px #bfcbba; padding: 1.5rem 1rem; background: #fcf8fa; z-index: 10; }
+
+.ui-tabs .ui-tabs-panel li:last-child, .ui-tabs .ui-tabs-panel p:last-child { margin-bottom: 0; }
+
+.conifer-facts { margin-left: 1.25rem; margin-top: 1.5rem; }
+
+.conifer-facts li { margin-bottom: 1.5rem; }
+
+.inner-wrapper { position: relative; width: 100%; padding: 1.5rem 1rem; padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
 .section-divider { position: absolute; width: 100%; height: 3rem; bottom: -3rem; right: 0; fill: #fcf8fa; }
 
-.inner-divider { position: relative; margin: 1.5rem auto; width: 100%; }
+.inner-divider { position: relative; height: 0; margin: 0 auto; width: 100%; z-index: 1010; }
 
 .inner-divider .mask { overflow: hidden; height: 0.55rem; }
 
@@ -72,4 +113,8 @@ header.inner-wrapper { padding-bottom: 1.5rem; }
 .inner-divider span { position: absolute; bottom: 100%; left: 50%; margin-bottom: -1.5625rem; margin-left: -1.5625rem; padding: 0.3rem; width: 3.125rem; height: 3.125rem; border-radius: 50%; -webkit-box-shadow: 0.125rem 0.35rem 0.45rem #bfcbba; box-shadow: 0.125rem 0.35rem 0.45rem #bfcbba; background: #fcf8fa; }
 
 .inner-divider svg { height: 2.5rem; width: 2.5rem; border-radius: 50%; border: 1px dashed #bfcbba; fill: #849c9b; padding: 0.5rem; }
+
+.block { display: block; }
+
+.ui-tooltip { position: absolute; background: #587469; color: #fcf8fa; padding: 8px; max-width: 17.5rem; -webkit-box-shadow: 0 0 5px #849c9b; box-shadow: 0 0 5px #849c9b; z-index: 9999; }
 /*# sourceMappingURL=styles.min.css.map */
