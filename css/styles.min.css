@@ -51,7 +51,7 @@ a:hover { color: #849c9b; }
 
 html { background-color: #dcdcdb; }
 
-body { background: url("../../assets/svg/Waiau.svg") no-repeat top left/contain fixed, linear-gradient(51deg, #dcdcdb 45.5%, #eae8e4 45.5%) fixed; min-height: 100vh; }
+body { background: url("../assets/svg/Waiau.svg") no-repeat top left/contain fixed, linear-gradient(51deg, #dcdcdb 45.5%, #eae8e4 45.5%) fixed; min-height: 100vh; }
 
 body > .wrapper { max-width: 75rem; border-width: 0.8rem; border-style: none solid; background-color: rgba(252, 248, 250, 0.6); border-color: rgba(229, 171, 23, 0.3); }
 
