@@ -1,0 +1,12 @@
+footer {
+  border-top: 0.35rem solid rgba($navy, 0.8);
+
+  &.inner-wrapper {
+    padding-top: 3rem;
+    background: $white;
+  }
+
+  .inner-divider {
+    margin-bottom: 1.5rem;
+  }
+}
