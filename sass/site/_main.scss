@@ -1,13 +1,11 @@
 main {
   padding-bottom: 3rem;
+  margin-left: 1rem;
 
   .inner-wrapper {
     background: $white;
-    border: 0.35rem;
-    border-style: solid none none solid;
 
-    @include fade(border-top-color, $navy, 0.8);
-    @include fade(border-left-color, $lt-blue);
+    @include section-borders();
   }
 }
 
@@ -24,10 +22,6 @@ main {
 
   .register {
     width: 18rem;
-
-    a {
-      font-size: $h5;
-    }
   }
 }
 
@@ -36,6 +30,9 @@ main {
   -----*/
 .ui-tabs {
   position: relative;
+  border-left: 0.35rem solid;
+
+  @include fade(border-left-color, $lt-blue);
 }
 
 .ui-tabs-nav {
@@ -44,14 +41,13 @@ main {
 
   li {
     padding: 0.5rem 1rem;
-    border-style: solid dotted none none;
+    border-right-style: dotted;
     border-width: 0.1875rem 1px;
+    border-top: 0.35rem solid;
     border-color: $md-green $lt-green;
     background: $white;
 
-    &:first-of-type {
-      border-left-style: dotted;
-    }
+    @include fade(border-top-color, $navy, 0.8);
 
     &.ui-tabs-active {
       position: relative;
@@ -73,11 +69,14 @@ main {
 
 .ui-tabs .ui-tabs-panel {
   position: relative;
-  box-shadow: 0.25rem -0.25rem 0.35rem $lt-green;
-  border-left: 1px $lt-green;
+  margin-top: -0.3875rem;
+  // box-shadow: 0.25rem -0.25rem 0.35rem $lt-green;
+  border-top: 0.35rem solid;
   padding: 1.5rem 1rem;
   background: $white;
   z-index: 10;
+
+  @include fade(border-top-color, $md-green, 0.7);
 
   li:last-child,
   p:last-child {

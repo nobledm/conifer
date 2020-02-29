@@ -53,9 +53,11 @@
 
         <div class="register">
           <p>Wanna click some things?</p>
-          <a class="block tooltip" title="Doesn't actually do any registering... But click for a dialogue form" href="#">Registration Form</a>
+          <a id="registerLink" class="btn" href="#">Registration Form</a>
 
-          <!-- TODO: REGISTRATION DIALOGUE STUFF -->
+          <div id="dialog" title="Register">
+          test
+          </div>
         </div>
 
         <svg class="section-divider" viewBox="0 0 1280 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,6 +131,31 @@
       });
 
       $(".tooltip").tooltip();
+
+      $("#dialog").dialog({
+        autoOpen: false,
+        width: "80%",
+        buttons: [
+          {
+            text: 'Register',
+            click: function() {
+              $(this).dialog("close");
+            }
+          },
+          {
+            text: "Cancel",
+            click: function() {
+              $(this).dialog("close");
+            }
+          }
+        ]
+      });
+
+      $("#registerLink").click(function(e) {
+        $("#dialog").dialog("open");
+
+        e.preventDefault();
+      });
     })
   </script>
 </body>

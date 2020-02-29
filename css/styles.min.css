@@ -55,7 +55,7 @@ body { background: url("../../assets/svg/Waiau.svg") no-repeat top left/contain 
 
 body > .wrapper { max-width: 75rem; border-width: 0.8rem; border-style: none solid; background-color: rgba(252, 248, 250, 0.6); border-color: rgba(229, 171, 23, 0.3); }
 
-.wrapper { margin: 0 auto; padding: 0 1rem; width: 90%; min-height: 100vh; }
+.wrapper { margin: 0 auto; width: 90%; min-height: 100vh; }
 
 p { max-width: 35.5rem; margin-bottom: 1.5rem; }
 
@@ -65,7 +65,7 @@ header h2 { margin-bottom: 0; }
 
 header.inner-wrapper { padding-top: 3rem; background: #fcf8fa; }
 
-main { padding-bottom: 3rem; }
+main { padding-bottom: 3rem; margin-left: 1rem; }
 
 main .inner-wrapper { background: #fcf8fa; border: 0.35rem; border-style: solid none none solid; border-top-color: rgba(42, 62, 76, 0.8); border-left-color: rgba(96, 190, 191, 0.5); }
 
@@ -75,16 +75,12 @@ main .inner-wrapper { background: #fcf8fa; border: 0.35rem; border-style: solid 
 
 .intro .register { width: 18rem; }
 
-.intro .register a { font-size: 1.333rem; }
-
 /*----- TABS -----*/
-.ui-tabs { position: relative; }
+.ui-tabs { position: relative; border-left: 0.35rem solid; border-left-color: rgba(96, 190, 191, 0.5); }
 
 .ui-tabs-nav { display: -webkit-box; display: -ms-flexbox; display: flex; list-style: none; }
 
-.ui-tabs-nav li { padding: 0.5rem 1rem; border-style: solid dotted none none; border-width: 0.1875rem 1px; border-color: #849c9b #bfcbba; background: #fcf8fa; }
-
-.ui-tabs-nav li:first-of-type { border-left-style: dotted; }
+.ui-tabs-nav li { padding: 0.5rem 1rem; border-right-style: dotted; border-width: 0.1875rem 1px; border-top: 0.35rem solid; border-color: #849c9b #bfcbba; background: #fcf8fa; border-top-color: rgba(42, 62, 76, 0.8); }
 
 .ui-tabs-nav li.ui-tabs-active { position: relative; border-bottom: none; background: #fcf8fa; z-index: 20; }
 
@@ -92,7 +88,7 @@ main .inner-wrapper { background: #fcf8fa; border: 0.35rem; border-style: solid 
 
 .ui-tabs-nav li.ui-tabs-active a:hover { cursor: text; }
 
-.ui-tabs .ui-tabs-panel { position: relative; -webkit-box-shadow: 0.25rem -0.25rem 0.35rem #bfcbba; box-shadow: 0.25rem -0.25rem 0.35rem #bfcbba; border-left: 1px #bfcbba; padding: 1.5rem 1rem; background: #fcf8fa; z-index: 10; }
+.ui-tabs .ui-tabs-panel { position: relative; margin-top: -0.3875rem; border-top: 0.35rem solid; padding: 1.5rem 1rem; background: #fcf8fa; z-index: 10; border-top-color: rgba(132, 156, 155, 0.7); }
 
 .ui-tabs .ui-tabs-panel li:last-child, .ui-tabs .ui-tabs-panel p:last-child { margin-bottom: 0; }
 
@@ -103,6 +99,8 @@ main .inner-wrapper { background: #fcf8fa; border: 0.35rem; border-style: solid 
 .inner-wrapper { position: relative; width: 100%; padding: 1.5rem 1rem; padding-top: 1.5rem; padding-bottom: 1.5rem; }
 
 .section-divider { position: absolute; width: 100%; height: 3rem; bottom: -3rem; right: 0; fill: #fcf8fa; }
+
+.section-divider path:first-of-type { fill: #bfcbba; }
 
 .inner-divider { position: relative; height: 0; margin: 0 auto; width: 100%; z-index: 1010; }
 
@@ -116,5 +114,35 @@ main .inner-wrapper { background: #fcf8fa; border: 0.35rem; border-style: solid 
 
 .block { display: block; }
 
-.ui-tooltip { position: absolute; background: #587469; color: #fcf8fa; padding: 8px; max-width: 17.5rem; -webkit-box-shadow: 0 0 5px #849c9b; box-shadow: 0 0 5px #849c9b; z-index: 9999; }
+.btn, .ui-dialog .ui-dialog-buttonpane button { display: inline-block; background-color: #ca4016; border-radius: 0.25rem; padding: 0.5rem 1rem; color: #fcf8fa; font-size: 1.333rem; }
+
+.btn:hover, .ui-dialog .ui-dialog-buttonpane button:hover { background-color: #9c3111; color: #f4e6ed; }
+
+.ui-tooltip { position: absolute; background: #587469; color: #fcf8fa; padding: 8px; max-width: 17.5rem; -webkit-box-shadow: 0 0 5px #849c9b; box-shadow: 0 0 5px #849c9b; z-index: 9989; }
+
+.ui-dialog { position: absolute; top: 0; left: 0; max-width: 55rem; border: 0.5rem solid; z-index: 9999; border-color: rgba(191, 203, 186, 0.5); }
+
+.ui-dialog .ui-dialog-titlebar { position: relative; padding: 0.4em 1em; background-color: #587469; }
+
+.ui-dialog .ui-dialog-title { white-space: nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 2.369rem; color: #fcf8fa; margin-bottom: 0; line-height: 3rem; }
+
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 0.5rem; top: 0.5rem; width: 1.75rem; height: 1.75rem; padding: 0.125rem; border: none; border-radius: 50%; }
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon { position: relative; }
+
+.ui-dialog .ui-dialog-titlebar-close .ui-icon:after { content: "\2716"; position: absolute; top: -0.7rem; left: -0.4rem; font-size: 1rem; color: #ca4016; }
+
+.ui-dialog .ui-dialog-titlebar-close .ui-button-text { display: none; }
+
+.ui-dialog .ui-dialog-content { position: relative; padding: 0.5em 1em; background: none; background-color: #eae8e4; }
+
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; padding: 0.3em 1em 0.5em 0.4em; background-color: #dcdcdb; }
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { text-align: right; }
+
+.ui-dialog .ui-dialog-buttonpane button { border: 0; outline: 0; }
+
+.ui-dialog .ui-dialog-buttonpane button:first-of-type { margin-right: 1rem; }
+
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
 /*# sourceMappingURL=styles.min.css.map */

@@ -13,6 +13,10 @@
   bottom: -3rem;
   right: 0;
   fill: $white;
+
+  path:first-of-type {
+    fill: $lt-green;
+  }
 }
 
 .inner-divider {
@@ -64,6 +68,20 @@
   display: block;
 }
 
+.btn {
+  display: inline-block;
+  background-color: $red;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  color: $white;
+  font-size: $h5;
+
+  &:hover {
+    background-color: darken($red, 10%);
+    color: darken($white, 5%);
+  }
+}
+
 .ui-tooltip {
   position: absolute;
   background: $dk-green;
@@ -71,5 +89,92 @@
   padding: 8px;
   max-width: 17.5rem;
   box-shadow: 0 0 5px $md-green;
+  z-index: 9989;
+}
+
+.ui-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 55rem;
+  border: 0.5rem solid;
   z-index: 9999;
+
+  @include fade(border-color, $lt-green);
+
+  .ui-dialog-titlebar {
+    position: relative;
+    padding: 0.4em 1em;
+    background-color: $dk-green;
+  }
+
+  .ui-dialog-title {
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @include text-style($give-glory, $h3, $white);
+  }
+
+  .ui-dialog-titlebar-close {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.125rem;
+    border: none;
+    border-radius: 50%;
+
+    .ui-icon {
+      position: relative;
+
+      &:after {
+        content: "\2716";
+        position: absolute;
+        top: -0.7rem;
+        left: -0.4rem;
+        font-size: 1rem;
+        color: $red;
+      }
+    }
+
+    .ui-button-text {
+      display: none;
+    }
+  }
+
+  .ui-dialog-content {
+    position: relative;
+    padding: 0.5em 1em;
+    background: none;
+    background-color: $lt-grey;
+  }
+
+  .ui-dialog-buttonpane {
+    text-align: left;
+    border-width: 1px 0 0 0;
+    padding: 0.3em 1em 0.5em 0.4em;
+    background-color: $md-grey;
+
+    .ui-dialog-buttonset {
+      text-align: right;
+    }
+
+    button {
+      @extend .btn;
+
+      border: 0;
+      outline: 0;
+
+      &:first-of-type {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.ui-draggable .ui-dialog-titlebar {
+  cursor: move;
 }

@@ -24,3 +24,16 @@
 @mixin fade($prop, $color, $opacity: 0.5) {
   #{$prop}: rgba($color, $opacity);
 }
+
+@mixin section-borders(
+  $t-color: $navy,
+  $t-opacity: 0.8,
+  $l-color: $lt-blue,
+  $l-opacity: 0.5
+) {
+  border: 0.35rem;
+  border-style: solid none none solid;
+
+  @include fade(border-top-color, $t-color, $t-opacity);
+  @include fade(border-left-color, $l-color, $l-opacity);
+}
