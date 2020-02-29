@@ -132,7 +132,9 @@ footer .inner-divider { margin-bottom: 1.5rem; }
 
 .ui-dialog .ui-dialog-title { white-space: nowrap; width: 90%; overflow: hidden; text-overflow: ellipsis; font-family: "Give You Glory", "Comic Sans MS", serif; font-size: 2.369rem; color: #fcf8fa; margin-bottom: 0; line-height: 3rem; }
 
-.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 0.5rem; top: 0.5rem; width: 1.75rem; height: 1.75rem; padding: 0.125rem; border: none; border-radius: 50%; }
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: 0.5rem; top: 0.5rem; width: 1.75rem; height: 1.75rem; padding: 0.125rem; border: none; border-radius: 50%; cursor: pointer; }
+
+.ui-dialog .ui-dialog-titlebar-close:hover { background-color: #fcf8fa; }
 
 .ui-dialog .ui-dialog-titlebar-close .ui-icon { position: relative; }
 
@@ -146,9 +148,11 @@ footer .inner-divider { margin-bottom: 1.5rem; }
 
 .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { text-align: right; }
 
-.ui-dialog .ui-dialog-buttonpane button { border: 0; outline: 0; }
+.ui-dialog .ui-dialog-buttonpane button { border: 0; outline: 0; cursor: pointer; }
 
-.ui-dialog .ui-dialog-buttonpane button:first-of-type { margin-right: 1rem; }
+.ui-dialog .ui-dialog-buttonpane button:first-of-type { margin-right: 1rem; background-color: #849c9b; }
+
+.ui-dialog .ui-dialog-buttonpane button:first-of-type:hover { background-color: #769190; }
 
 .ui-draggable .ui-dialog-titlebar { cursor: move; }
 /*# sourceMappingURL=styles.min.css.map */
