@@ -96,7 +96,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 55rem;
+  max-width: 40rem;
   border: 0.5rem solid;
   z-index: 9999;
 
@@ -152,7 +152,7 @@
 
   .ui-dialog-content {
     position: relative;
-    padding: 0.5em 1em;
+    padding: 1rem;
     background: none;
     background-color: $lt-grey;
   }
@@ -160,12 +160,8 @@
   .ui-dialog-buttonpane {
     text-align: left;
     border-width: 1px 0 0 0;
-    padding: 0.3em 1em 0.5em 0.4em;
+    padding: 1rem;
     background-color: $md-grey;
-
-    .ui-dialog-buttonset {
-      text-align: right;
-    }
 
     button {
       @extend .btn;
